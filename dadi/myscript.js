@@ -9,3 +9,16 @@ console.log(numUtente);
 
 let numPc= Math.floor(Math.random(1) * 6) + 1;
 console.log(numPc);
+
+// metto le condizioni per la quale debba vincere uno o l'altro
+
+if (numUtente > numPc) {
+    console.log("hai vinto!")
+    alert("hai vinto!")
+} else if (numPc > numUtente) {
+    console.log("hai perso!")
+    alert("hai perso!")
+} else {
+    console.log("è un pareggio")
+    alert("è un pareggio")
+}
