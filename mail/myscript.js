@@ -3,6 +3,7 @@
 
 
 const askMail = prompt("inserisci la tua email");
+console.log(askMail);
 
 let listMail = [
     "uno@live.it",
@@ -11,3 +12,12 @@ let listMail = [
     "quattro@gmail.com",
     "cinque@gmail.com",
 ];
+console.log(listMail);
+
+let findEmail = false
+for (let i = 0; i < listMail.length; i++) {
+    if(askMail == listMail[i]){
+        console.log("La tua mail corrisponde Benvenuto");
+        findEmail = true;         
+    } 
+}
