@@ -17,7 +17,6 @@ console.log(listMail);
 let findEmail = false
 for (let i = 0; i < listMail.length; i++) {
     if(askMail == listMail[i]){
-        console.log("La tua mail corrisponde Benvenuto");
         findEmail = true;         
     } 
 }
