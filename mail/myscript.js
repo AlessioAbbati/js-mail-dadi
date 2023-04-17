@@ -14,9 +14,17 @@ let listMail = [
 ];
 console.log(listMail);
 
-let findEmail = false
+// creo le condizioni per vedere se la mail inserita è valida o meno
+
+let findEmail 
 for (let i = 0; i < listMail.length; i++) {
     if(askMail == listMail[i]){
         findEmail = true;         
     } 
+}
+
+if (findEmail == true) {
+    console.log("email trovata!")
+} else {
+    console.log("email non trovata, inserirne una valida")
 }
